@@ -1,5 +1,5 @@
 export default function useTelegram() {
-  const tg = window?.Telegram?.WebApp;
+  const tg = window.Telegram.WebApp;
 
   const onClose = () => {
     if (tg) tg.close();
