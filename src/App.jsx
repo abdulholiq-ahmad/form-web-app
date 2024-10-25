@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Route, Routes } from "react-router";
 import useTelegram from "./hook/useTelegram";
-import Home from "./pages/Home/Home";
+import Home from "./pages/home/Home";
 
 function App() {
   const { tg } = useTelegram();
