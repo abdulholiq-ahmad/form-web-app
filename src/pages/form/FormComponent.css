@@ -1,0 +1,11 @@
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
