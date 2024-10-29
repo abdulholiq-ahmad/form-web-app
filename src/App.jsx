@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Route, Routes } from "react-router";
-import useTelegram from "./hook/useTelegram";
+import useTelegram from "./hooks/useTelegram";
 import FormComponent from "./pages/form/FormComponent";
 
 function App() {
