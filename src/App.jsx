@@ -1,7 +1,8 @@
 import { useEffect } from "react";
-import { Route, Routes } from "react-router";
+import { Route, Routes } from "react-router-dom";
 import useTelegram from "./hooks/useTelegram";
 import FormComponent from "./pages/form/FormComponent";
+import { SuspenseComponent } from "@/utils";
 
 function App() {
   const { tg } = useTelegram();
@@ -15,7 +16,14 @@ function App() {
   return (
     <>
       <Routes>
-        <Route index element={<FormComponent />} />
+        <Route
+          index
+          element={
+            <SuspenseComponent>
+              <FormComponent />
+            </SuspenseComponent>
+          }
+        />
       </Routes>
     </>
   );
